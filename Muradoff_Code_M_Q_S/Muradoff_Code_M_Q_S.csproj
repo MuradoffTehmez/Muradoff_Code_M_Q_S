@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D5CAF0A9-E052-45D0-9357-081D8140A82A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Muradoff_Code_M_Q_S</RootNamespace>
+    <AssemblyName>Muradoff_Code_M_Q_S</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="afto_kira.cs" />
+    <Compile Include="Frm_ana_sehife.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ana_sehife.Designer.cs">
+      <DependentUpon>Frm_ana_sehife.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_callulyator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_callulyator.Designer.cs">
+      <DependentUpon>frm_callulyator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_giris.Designer.cs">
+      <DependentUpon>frm_giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_login.Designer.cs">
+      <DependentUpon>frm_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_login_forget.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_login_forget.Designer.cs">
+      <DependentUpon>frm_login_forget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_login_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_login_page.Designer.cs">
+      <DependentUpon>frm_login_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_masin_qeydiyyat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_masin_qeydiyyat.Designer.cs">
+      <DependentUpon>Frm_masin_qeydiyyat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_masin_siyahisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_masin_siyahisi.Designer.cs">
+      <DependentUpon>frm_masin_siyahisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_musteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_musteri.Designer.cs">
+      <DependentUpon>Frm_musteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_musteri_siyahisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_musteri_siyahisi.Designer.cs">
+      <DependentUpon>frm_musteri_siyahisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prakatol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_prakatol.Designer.cs">
+      <DependentUpon>frm_prakatol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_satislar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_satislar.Designer.cs">
+      <DependentUpon>frm_satislar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frm_ana_sehife.resx">
+      <DependentUpon>Frm_ana_sehife.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_callulyator.resx">
+      <DependentUpon>frm_callulyator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_giris.resx">
+      <DependentUpon>frm_giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_login.resx">
+      <DependentUpon>frm_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_login_forget.resx">
+      <DependentUpon>frm_login_forget.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_login_page.resx">
+      <DependentUpon>frm_login_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_masin_qeydiyyat.resx">
+      <DependentUpon>Frm_masin_qeydiyyat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_masin_siyahisi.resx">
+      <DependentUpon>frm_masin_siyahisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_musteri.resx">
+      <DependentUpon>Frm_musteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_musteri_siyahisi.resx">
+      <DependentUpon>frm_musteri_siyahisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prakatol.resx">
+      <DependentUpon>frm_prakatol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_satislar.resx">
+      <DependentUpon>frm_satislar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
